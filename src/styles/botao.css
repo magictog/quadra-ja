@@ -1,0 +1,47 @@
+/* Bloco "botao" (BEM) e as suas variações. */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espaco-p);
+  padding: 12px 20px;
+  border: 0;
+  border-radius: var(--raio);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao--primario {
+  background: var(--cor-primaria);
+  color: #fff;
+}
+
+.botao--primario:hover {
+  background: var(--cor-primaria-escura);
+}
+
+.botao--secundario {
+  background: transparent;
+  color: var(--cor-primaria);
+  border: 2px solid var(--cor-primaria);
+}
+
+.botao--perigo {
+  background: transparent;
+  color: var(--cor-erro);
+  border: 2px solid var(--cor-erro);
+}
+
+.botao--largo {
+  width: 100%;
+}
+
+.botao:disabled,
+.botao--desativado {
+  background: var(--cor-borda);
+  color: var(--cor-texto-suave);
+  border-color: var(--cor-borda);
+  cursor: not-allowed;
+}

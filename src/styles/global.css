@@ -1,0 +1,80 @@
+/* Estilos que valem para o site todo. Mobile primeiro: as telas grandes
+   ganham ajustes nos @media (min-width: ...). */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--cor-primaria);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 var(--espaco-p);
+}
+
+/* Bloco "pagina": o espaço de conteúdo de todas as telas */
+.pagina {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--espaco-m);
+}
+
+.pagina__subtitulo {
+  color: var(--cor-texto-suave);
+  margin: 0 0 var(--espaco-g);
+}
+
+.pagina__aviso {
+  padding: var(--espaco-m);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+}
+
+.pagina__aviso--erro {
+  color: var(--cor-erro);
+  border-color: var(--cor-erro);
+}
+
+/* Bloco "selo": etiqueta pequena (esporte, grátis, coberta) */
+.selo {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: #e6f2ec;
+  color: var(--cor-primaria-escura);
+}
+
+.selo--gratis {
+  background: var(--cor-destaque);
+  color: var(--cor-texto);
+  font-weight: 600;
+}
+
+.selo--cancelada {
+  background: #f8e1de;
+  color: var(--cor-erro);
+}
+
+@media (min-width: 768px) {
+  .pagina {
+    padding: var(--espaco-g);
+  }
+}

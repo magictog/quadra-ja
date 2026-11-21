@@ -1,0 +1,22 @@
+/* Cores, espaços e fontes do site. Mudando aqui, muda no site inteiro. */
+:root {
+  --cor-primaria: #1f7a4d;
+  --cor-primaria-escura: #165c3a;
+  --cor-destaque: #f2b705;
+  --cor-texto: #1d2420;
+  --cor-texto-suave: #5b6660;
+  --cor-fundo: #f5f7f4;
+  --cor-cartao: #ffffff;
+  --cor-borda: #dde3dd;
+  --cor-erro: #c0392b;
+  --cor-sucesso: #1f7a4d;
+
+  --espaco-p: 8px;
+  --espaco-m: 16px;
+  --espaco-g: 24px;
+
+  --raio: 12px;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  --fonte: "Segoe UI", Roboto, Arial, sans-serif;
+}

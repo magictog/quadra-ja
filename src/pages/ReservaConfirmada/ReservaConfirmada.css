@@ -1,0 +1,31 @@
+.confirmada {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.confirmada p {
+  margin: 0 0 var(--espaco-p);
+}
+
+.confirmada__icone {
+  color: var(--cor-sucesso);
+  margin: var(--espaco-g) 0 var(--espaco-m);
+}
+
+.confirmada__codigo {
+  padding: var(--espaco-p) var(--espaco-m);
+  border: 2px dashed var(--cor-primaria);
+  border-radius: var(--raio);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.confirmada__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espaco-p);
+  margin-top: var(--espaco-m);
+}

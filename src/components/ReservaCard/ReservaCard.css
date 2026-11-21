@@ -1,0 +1,39 @@
+.reserva-card {
+  display: grid;
+  gap: var(--espaco-p);
+  padding: var(--espaco-m);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra);
+  border-left: 6px solid var(--cor-primaria);
+}
+
+.reserva-card--cancelada {
+  border-left-color: var(--cor-erro);
+  opacity: 0.75;
+}
+
+.reserva-card__topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espaco-p);
+}
+
+.reserva-card__titulo {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.reserva-card__info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--cor-texto-suave);
+}
+
+.reserva-card__acoes {
+  display: flex;
+  gap: var(--espaco-p);
+}

@@ -1,0 +1,45 @@
+/* Mesma ideia do TaskModal da aula: fixed + inset 0 cobre a tela inteira */
+.remarcar-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: end center;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.remarcar-modal__janela {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+  padding: var(--espaco-g);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+}
+
+.remarcar-modal__fechar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  padding: 6px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.remarcar-modal__acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--espaco-p);
+  margin-top: var(--espaco-g);
+}
+
+@media (min-width: 600px) {
+  .remarcar-modal {
+    place-items: center;
+  }
+}

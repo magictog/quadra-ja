@@ -1,0 +1,44 @@
+.seletor-horario {
+  display: grid;
+  gap: var(--espaco-m);
+}
+
+.seletor-horario__titulo {
+  margin: 0;
+  font-weight: 600;
+}
+
+.seletor-horario__grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-p);
+}
+
+.seletor-horario__opcao {
+  padding: 12px 4px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  background: var(--cor-cartao);
+  font: inherit;
+  cursor: pointer;
+}
+
+.seletor-horario__opcao--escolhido {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  color: #fff;
+  font-weight: 700;
+}
+
+.seletor-horario__opcao:disabled {
+  background: var(--cor-fundo);
+  color: var(--cor-texto-suave);
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+@media (min-width: 600px) {
+  .seletor-horario__grade {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

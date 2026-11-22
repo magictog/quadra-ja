@@ -1,0 +1,9 @@
+.escolher-horario {
+  display: grid;
+  gap: var(--espaco-m);
+  max-width: 720px;
+}
+
+.escolher-horario h1 {
+  margin: 0;
+}

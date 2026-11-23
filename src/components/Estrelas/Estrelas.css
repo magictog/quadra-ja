@@ -1,0 +1,17 @@
+.estrelas {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.estrelas__icone {
+  color: var(--cor-destaque);
+  fill: var(--cor-destaque);
+}
+
+.estrelas__total {
+  font-weight: 400;
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}

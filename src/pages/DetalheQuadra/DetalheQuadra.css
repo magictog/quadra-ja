@@ -1,0 +1,118 @@
+.detalhe__fotos {
+  display: flex;
+  gap: var(--espaco-p);
+  overflow-x: auto;
+}
+
+.detalhe__foto {
+  width: 100%;
+  max-width: 640px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--raio);
+  flex-shrink: 0;
+}
+
+.detalhe__credito {
+  margin: 4px 0 var(--espaco-m);
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+}
+
+.detalhe__cabecalho {
+  display: grid;
+  gap: var(--espaco-m);
+  margin-bottom: var(--espaco-g);
+}
+
+.detalhe__esportes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: var(--espaco-p);
+}
+
+.detalhe__reserva {
+  padding: var(--espaco-m);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra);
+}
+
+.detalhe__reserva p {
+  margin: 0 0 var(--espaco-p);
+}
+
+.detalhe__preco {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--cor-primaria);
+}
+
+.detalhe__preco small {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--cor-texto-suave);
+}
+
+.detalhe__aviso-preco {
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+.detalhe__lista {
+  display: grid;
+  gap: var(--espaco-p);
+  margin: 0 0 var(--espaco-g);
+  padding: 0;
+  list-style: none;
+}
+
+/* Ícone à esquerda e o texto ao lado, mesmo quando o texto quebra a linha */
+.detalhe__lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.detalhe__lista svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.detalhe__avaliacoes {
+  display: grid;
+  gap: var(--espaco-m);
+}
+
+.detalhe__avaliacao {
+  margin: 0;
+  padding: var(--espaco-m);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  border-left: 4px solid var(--cor-destaque);
+}
+
+.detalhe__avaliacao p {
+  margin: var(--espaco-p) 0;
+}
+
+.detalhe__avaliacao footer {
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+@media (min-width: 768px) {
+  .detalhe__foto {
+    height: 340px;
+  }
+
+  .detalhe__cabecalho {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .detalhe__avaliacoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

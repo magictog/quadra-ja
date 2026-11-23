@@ -1,0 +1,40 @@
+.esportes__grade {
+  display: grid;
+  gap: var(--espaco-m);
+}
+
+.esporte-card {
+  display: grid;
+  gap: 4px;
+  padding: var(--espaco-m);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra);
+  border-top: 4px solid var(--cor-primaria);
+  color: inherit;
+  text-decoration: none;
+}
+
+.esporte-card:hover {
+  border-top-color: var(--cor-destaque);
+}
+
+.esporte-card__nome {
+  margin: 0;
+}
+
+.esporte-card__descricao {
+  margin: 0;
+  color: var(--cor-texto-suave);
+}
+
+.esporte-card__total {
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+@media (min-width: 768px) {
+  .esportes__grade {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

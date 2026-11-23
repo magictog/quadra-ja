@@ -1,0 +1,31 @@
+.busca__filtros {
+  display: grid;
+  gap: var(--espaco-p);
+  margin-bottom: var(--espaco-m);
+}
+
+.busca__opcao {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.busca__resultado {
+  color: var(--cor-texto-suave);
+}
+
+.busca__lista {
+  display: grid;
+  gap: var(--espaco-m);
+}
+
+@media (min-width: 768px) {
+  .busca__filtros {
+    grid-template-columns: 2fr 1fr 1fr auto auto;
+    align-items: center;
+  }
+
+  .busca__lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

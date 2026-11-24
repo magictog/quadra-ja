@@ -1,0 +1,28 @@
+.perfil__cartao {
+  max-width: 480px;
+  padding: var(--espaco-g);
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra);
+}
+
+.perfil__cartao p {
+  margin: 0 0 4px;
+}
+
+.perfil__nome {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.perfil__total {
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
+
+.perfil__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-p);
+  margin-top: var(--espaco-m);
+}

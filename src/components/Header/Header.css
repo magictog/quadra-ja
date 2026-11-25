@@ -1,0 +1,79 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px var(--espaco-m);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra);
+}
+
+.header__logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+.header__logo-destaque {
+  color: var(--cor-destaque);
+}
+
+.header__botao-menu {
+  display: flex;
+  padding: 6px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* No celular o menu fica escondido até o botão ser clicado */
+.header__menu {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  padding-top: var(--espaco-p);
+}
+
+.header__menu--aberto {
+  display: flex;
+}
+
+.header__link {
+  padding: 12px 4px;
+  color: var(--cor-texto);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+/* O NavLink coloca a classe "active" sozinho na página atual */
+.header__link.active {
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+
+.header__link--conta {
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+@media (min-width: 900px) {
+  .header__botao-menu {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    gap: var(--espaco-m);
+    padding: 0;
+  }
+
+  .header__link {
+    border: 0;
+  }
+}

@@ -1,0 +1,64 @@
+.inicio-banner {
+  display: grid;
+  gap: var(--espaco-m);
+  justify-items: start;
+  padding: 40px var(--espaco-m);
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+  color: #fff;
+}
+
+.inicio-banner__titulo {
+  font-size: 1.8rem;
+  max-width: 560px;
+}
+
+.inicio-banner__texto {
+  margin: 0;
+  max-width: 520px;
+  opacity: 0.9;
+}
+
+.inicio-banner .botao--primario {
+  background: var(--cor-destaque);
+  color: var(--cor-texto);
+}
+
+.inicio__esportes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-p);
+  margin-bottom: var(--espaco-g);
+}
+
+.inicio__esporte {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.inicio__esporte:hover {
+  border-color: var(--cor-primaria);
+}
+
+.inicio__destaques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-m);
+}
+
+@media (min-width: 768px) {
+  .inicio-banner {
+    padding: 64px var(--espaco-g);
+  }
+
+  .inicio-banner__titulo {
+    font-size: 2.4rem;
+  }
+
+  .inicio__destaques {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

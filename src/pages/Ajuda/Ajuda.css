@@ -1,0 +1,40 @@
+.ajuda__perguntas {
+  display: grid;
+  gap: var(--espaco-p);
+  margin-bottom: var(--espaco-g);
+}
+
+.ajuda__item {
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra);
+}
+
+.ajuda__pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--espaco-m);
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ajuda__seta {
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.ajuda__seta--aberta {
+  transform: rotate(180deg);
+}
+
+.ajuda__resposta {
+  margin: 0;
+  padding: 0 var(--espaco-m) var(--espaco-m);
+  color: var(--cor-texto-suave);
+}
